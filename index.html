@@ -9,9 +9,9 @@
 
 <body class="grid">
     <!-- Put anchor tags in a div so they can be moved by CSS -->
-    <div>
-        <a class=link href="images.html">Images</a>
-        <a class=link href="advanced_search.html">Advanced Search</a>
+    <div class="links">
+        <a class="link_icon" href="images.html">Images</a>
+        <a class="link_icon" href="advanced_search.html">Advanced Search</a>
     </div>
 
     <h1 id="title">Google</h1>
@@ -20,10 +20,12 @@
         <div id="input_border">
             <input id="input_box" type="text" name="q">
         </div>
-        <br>
-        <div>
-            <input class="input_button" type="submit" value="Google Search">
-            <input class="input_button" type="submit" value="I'm Feeling Lucky">
+
+        <div id="buttons">
+            <!-- Give buttons corresponding button names with Google's naming so it knows how to handle the submission -->
+            <!-- HTML uses "names" attribute as part of the form data -->
+            <input id="input_button_1" name="btnK" type="submit" value="Google Search">
+            <input id="input_button_2" name="btnI" type="submit" value="I'm Feeling Lucky">
         </div>
     </form>
 </body>
