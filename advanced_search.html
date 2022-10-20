@@ -7,16 +7,65 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="grid">
-    <div>
-        <a class="link" href="index.html">Google</a>
+<body class="advanced_grid">
+    <div class="links">
+        <a class="link_icon" href="index.html">Google</a>
     </div>
 
-    <h1 id="title">Advanced Search</h1>
+    <h1 id="advanced_title">Advanced Search</h1>
 
-    <form action="https://www.google.com/advanced_search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
+    <form action="https://www.google.com/search">
+        <h3 id="advanced_form_header">Find pages with...</h3>
+
+        <div id="advanced_form">
+            <div>
+                <div class="entry label">
+                    all these words:
+                </div>
+                <div class="entry">
+                    <div class="inset_border">
+                        <input class="inset_box" name="as_q" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="entry label">
+                    this exact word or phrase:
+                </div>
+                <div class="entry">
+                    <div class="inset_border">
+                        <input class="inset_box" name="as_epq" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="entry label">
+                    any of these words:
+                </div>
+                <div class="entry">
+                    <div class="inset_border">
+                        <input class="inset_box" name="as_oq" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="entry label">
+                    none of these words:
+                </div>
+                <div class="entry">
+                    <div class="inset_border">
+                        <input class="inset_box" name="as_eq" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="button_div">
+            <input id="advanced_button" type="submit" value="Advanced Search">
+        </div>
     </form>
 </body>
 
